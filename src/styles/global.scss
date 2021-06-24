@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$corPrimaria: #f8f8f8;
+$corSecundaria: #835afd;
+$corTexto: #29292e;
+$corTextoSecundaria: #a8a8b3;
+
+body {
+  background: $corPrimaria;
+  color: $corTexto;
+}
+
+body,
+input,
+button,
+textarea {
+  font: 400 1em "Roboto", sans-serif;
+}
