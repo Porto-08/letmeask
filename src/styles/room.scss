@@ -1,0 +1,105 @@
+@import "global.scss";
+
+#pageRoom {
+  header {
+    padding: 24px;
+    border-bottom: 1px solid $corTextoSecundaria;
+
+    .content {
+      max-width: 1120px;
+      margin: 0 auto;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      > img {
+        max-height: 45px;
+      }
+    }
+  }
+
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+
+    .roomTitle {
+      margin: 32px 0 24px;
+      display: flex;
+      align-items: center;
+
+      h1 {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.5em;
+        color: #29292e;
+      }
+
+      span {
+        margin-left: 16px;
+        background: #e559f9;
+        border-radius: 9999px;
+        padding: 8px 16px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 0.875em;
+      }
+    }
+
+    form {
+      textarea {
+        width: 100%;
+        border: 0;
+        padding: 16px;
+        border-radius: 8px;
+        background: #fefefe;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+        resize: vertical;
+        min-height: 130px;
+      }
+
+      .formFooter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 16px;
+
+        .userInfo {
+          display: flex;
+          align-items: center;
+
+          img {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+          }
+
+          span {
+            margin-left: 10px;
+            color: $corTexto;
+            font-size: 0.875em;
+            font-weight: 500;
+          }
+        }
+
+        > span {
+          font-size: 0.875em;
+          color: #737380;
+          font-weight: 500;
+
+          button {
+            background: 0;
+            border: 0;
+            color: $corSecundaria;
+            text-decoration: underline;
+            font-weight: 500;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .questionList {
+      margin-top: 32px;
+    }
+  }
+}

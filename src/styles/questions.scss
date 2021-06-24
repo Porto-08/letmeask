@@ -1,0 +1,62 @@
+@import "global.scss";
+
+.questionContainer {
+  background: #fefefe;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+
+  padding: 24px;
+  margin-bottom: 10px;
+
+  & + .questionContainer {
+      margin-top: 8px;
+  }
+
+  .questionContent {
+    p {
+      color: $corTexto;
+    }
+  }
+
+  .questionInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 24px;
+
+    .userQuestionInfo {
+      display: flex;
+      align-items: center;
+
+      img {
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+      }
+
+      span {
+        margin-left: 10px;
+        color: #737380;
+        font-size: 0.875em;
+      }
+    }
+
+    .likes {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+
+      img {
+        margin-left: 5px;
+        height: 26px;
+      }
+      span {
+        color: $corTexto;
+        font-size: 0.875em;
+        font-weight: 500;
+      }
+    }
+  }
+}
